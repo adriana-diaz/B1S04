@@ -11,7 +11,7 @@ public class Tarea1progra {
         int departamento = scanner.nextInt();
         System.out.println("Ingrese su nombre: ");
         String nombre = scanner.next();
-        System.out.println("Ingrese su antigüedad: ");
+        System.out.println("Ingrese sus años de antigüedad: ");
         int antiguedad = scanner.nextInt();
 
         switch (departamento) {
