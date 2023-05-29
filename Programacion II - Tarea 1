@@ -1,0 +1,50 @@
+package tarea1progra;
+
+import java.util.Scanner;
+
+public class Tarea1progra {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("---Bienvenido al sistema de calculo de vacaciones de la empresa El Patito Modosito---");
+        System.out.println("Ingrese opcion del departamento al que pertenece: 1:Departamento de Servicio al Cliente, 2:Departamento de Logística , 3: Gerencia");
+        int departamento = scanner.nextInt();
+        System.out.println("Ingrese su nombre: ");
+        String nombre = scanner.next();
+        System.out.println("Ingrese su antigüedad: ");
+        int antiguedad = scanner.nextInt();
+
+        switch (departamento) {
+            case 1:
+
+                if (antiguedad == 1) {
+                    System.out.println(nombre + " Departamento de Servicio al Cliente" + ": usted va a obtener 6 días de vacaciones");
+                } else if (antiguedad >= 2 && antiguedad <= 6) {
+                    System.out.println(nombre + " Departamento de Servicio al Cliente" + ": usted va a obtener 14 días de vacaciones");
+                } else if (antiguedad >= 7) {
+                    System.out.println(nombre + " Departamento de Servicio al Cliente" + ": usted va a obtener 20 días de vacaciones");
+                }
+
+                break;
+            case 2:
+                if (antiguedad == 1) {
+                    System.out.println(nombre + " Departamento de Departamento de Logística" + ": usted va a obtener 7 días de vacaciones");
+                } else if (antiguedad >= 2 && antiguedad <= 6) {
+                    System.out.println(nombre + " Departamento de Departamento de Logística" + ": usted va a obtener 15 días de vacaciones");
+                } else if (antiguedad >= 7) {
+                    System.out.println(nombre + " Departamento de Departamento de Logística" + ": usted va a obtener 22 días de vacaciones");
+                }
+                break;
+            case 3:
+                if (antiguedad == 1) {
+                    System.out.println(nombre + " Departamento de Gerencia " + ": usted va a obtener 10 días de vacaciones");
+                } else if (antiguedad >= 2 && antiguedad <= 6) {
+                    System.out.println(nombre + " Departamento Gerencia " + ": usted va a obtener 20 días de vacaciones");
+                } else if (antiguedad >= 7) {
+                    System.out.println(nombre + " Departamento Gerencia " + ": usted va a obtener 30 días de vacaciones");
+                }
+                break;
+        }
+
+    }
+}
