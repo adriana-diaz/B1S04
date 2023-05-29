@@ -45,6 +45,6 @@ public class Tarea1progra {
                 }
                 break;
         }
-
+        System.out.println("---Gracias por usar el sistema de calculo de vacaciones de la empresa El Patito Modosito---");
     }
 }
